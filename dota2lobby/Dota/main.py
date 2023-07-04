@@ -16,9 +16,9 @@ def create_practice_lobby():
     dota.destroy_lobby()
     dota.wait_event(dota.create_practice_lobby(password='5454',
                                options=dict(game_name='test', pass_key='5454', server_region=5, game_mode=2, pause_setting=0,)))
-    dota.wait_event(dota.join_practice_lobby_broadcast_channel(channel=1))
+    dota.join_practice_lobby_broadcast_channel(channel=1)
     dota.sleep(20)
-    dota.invite_to_lobby(76561198044532481)
+    dota.destroy_lobby()
 
 
 
